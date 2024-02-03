@@ -3,7 +3,7 @@ import instagram from './assets/instagram.png'
 
 export default function Profiles() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className="bg-white lg:pt-24 sm:pt-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <h2 className="text-center text-lg font-semibold leading-8 text-gray-900">
           Mnoho dalších nápadů najdete v mém profilu na těchto platformách:

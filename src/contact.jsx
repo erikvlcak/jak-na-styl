@@ -1,17 +1,3 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
 import {
   BuildingOffice2Icon,
   EnvelopeIcon,
@@ -193,7 +179,7 @@ export default function Example() {
                   htmlFor="message"
                   className="block text-sm font-semibold leading-6 text-gray-900"
                 >
-                  Text Vaší zprávy
+                  Váše zpráva
                 </label>
                 <div className="mt-2.5">
                   <textarea
@@ -209,7 +195,7 @@ export default function Example() {
             <div className="mt-8 flex justify-end">
               <button
                 type="submit"
-                className="rounded-md transition-all bg-[#cf0029] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#cf0029]"
+                className="rounded-md transition-all bg-[#cf0029] px-3.5 py-2.5 text-center text-md font-semibold text-white shadow-sm hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#cf0029]"
               >
                 Odeslat zprávu
               </button>

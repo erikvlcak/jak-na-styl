@@ -21,10 +21,6 @@ export default function Hero() {
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
-            {/* <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Jak na styl</span>
-              <img className="h-8 w-auto" src={srdce} alt="" />
-            </a> */}
           </div>
           <div className="flex lg:hidden">
             <button
@@ -41,7 +37,7 @@ export default function Hero() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-sm font-semibold leading-6 text-gray-900"
+                className="text-md font-semibold leading-6 text-gray-900"
               >
                 {item.name}
               </a>
@@ -84,14 +80,7 @@ export default function Hero() {
                     </a>
                   ))}
                 </div>
-                {/* <div className="py-6">
-                  <a
-                    href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
-                    Log in
-                  </a>
-                </div> */}
+                
               </div>
             </div>
           </Dialog.Panel>
@@ -165,13 +154,13 @@ export default function Hero() {
                         href="#"
                         className="transition-all rounded-md bg-[#cf0029] px-3.5 py-2.5 text-md font-semibold text-white shadow-sm hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                       >
-                        Kontaktuj mě
+                        Kontaktujte mě
                       </a>
                       <a
                         href="#"
                         className="text-md font-semibold leading-6 text-gray-900 hover:underline"
                       >
-                        Inspiruj se <span aria-hidden="true">→</span>
+                        Inspirujte se <span aria-hidden="true">→</span>
                       </a>
                     </div>
                   </div>
