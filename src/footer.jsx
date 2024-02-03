@@ -105,7 +105,7 @@ export default function Footer() {
             ))}
           </div>
         <p className="mt-10 text-center text-xs leading-5 text-gray-500">
-            &copy; 2024 Lenka Dvořáková - Jak na styl. Vytvořil <a href="https://github.com/erikvlcak" target="blank">Erik Vlčák</a>.
+            &copy; 2024 Lenka Dvořáková - Jak na styl. Web vytvořil <a href="https://github.com/erikvlcak" target="blank">Erik Vlčák</a>.
         </p>
         </div>
       </div>

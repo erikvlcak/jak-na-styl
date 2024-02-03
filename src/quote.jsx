@@ -3,7 +3,7 @@ import chanel from './assets/chanel.jpg'
 export default function Quote() {
   return (
     <div className="bg-white pb-16 pt-24 sm:pb-24 sm:pt-32 xl:pb-32">
-      <div className="bg-[#de0025] pb-20 sm:pb-24 xl:pb-0">
+      <div className="bg-[#cf0029] pb-20 sm:pb-24 xl:pb-0">
         <div className="mx-auto flex max-w-7xl flex-col items-center gap-x-8 gap-y-10 px-6 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch">
           <div className="-mt-8 w-full max-w-2xl xl:-mb-8 xl:w-96 xl:flex-none">
             <div className="relative aspect-[2/1] h-full md:-mx-8 xl:mx-0 xl:aspect-auto">

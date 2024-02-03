@@ -15,9 +15,9 @@ export default function App() {
         <About />
         <Mosaic />
         <Profiles />
-        <Card cardName={'satnik'} />
+        <Card satnik={true} />
         <Quote />
-        <Card cardName={'nakup'} />
+        <Card />
         <Contact />
         <Footer />
       </>

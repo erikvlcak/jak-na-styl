@@ -54,7 +54,7 @@ export default function Example() {
               </svg>
             </div>
             <h2 className="text-3xl font-bold tracking-tight text-gray-900">
-              Kontaktujte mě a domluvme si schůzku
+              Ozvěte se mi a domluvme si schůzku
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Můžete k tomu využít níže uvedené kontakty nebo vyplnit formulář a
@@ -193,7 +193,7 @@ export default function Example() {
                   htmlFor="message"
                   className="block text-sm font-semibold leading-6 text-gray-900"
                 >
-                  Text vaší zprávy
+                  Text Vaší zprávy
                 </label>
                 <div className="mt-2.5">
                   <textarea

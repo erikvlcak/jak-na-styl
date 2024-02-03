@@ -6,14 +6,14 @@ export default function About() {
           Něco málo o mně
         </h2>
         <p className="mt-6 text-lg leading-8 text-gray-600">
-          Jmenuju se Lenka a často se pohybuji mezi nitkami a designem. S radostí se
-          věnuji šití vlastních modelů, přičemž mým cílem je propojit styl s
-          pohodlím. Když nejsem ponořená do látek a střihů, zkoumám poslední
-          módni trendy a inspiruji se nejnovějšími stylovými směry. Miluji
-          kombinaci prvků, které vytváří jedinečné oblečení a ve kterých se každý
-          cítí sebejistě a stylově. Moje schopnost navrhovat oblečení se stala
-          nejen výrazem mé kreativity, ale i způsobem, jak pomáhat lidem najít
-          ten správný look a objevit jejich vlastní osobitý styl.
+          Jmenuju se Lenka a často se pohybuji mezi nitkami a designem. S
+          radostí se věnuji návrhu a šití vlastních modelů, přičemž mým cílem je
+          propojit styl s pohodlím. Miluji kombinaci prvků, které vytváří
+          jedinečné oblečení a ve kterých se každý cítí sebejistě a stylově.
+          Dbám na udržitelnost a proto ráda nakupuji v Second
+          handech, kde často najdu ty správné doplňky k drahšímu oblečení. Moje schopnost stylizovat oblečení se stala výrazem mé
+          kreativity a představuje pro mňe možnost jak pomáhat lidem najít ten správný look a
+          objevit jejich vlastní osobitý styl.
         </p>
       </div>
     </div>

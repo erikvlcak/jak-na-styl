@@ -19,7 +19,7 @@ const products = [
     rating: 5,
     reviewCount: 18,
     imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/category-page-05-image-card-02.jpg',
+      'https://tailwindui.com/img/ecommerce-images/category-page-05-image-card-01.jpg',
     imageAlt: 'TODO',
     href: '#',
   },
@@ -30,7 +30,7 @@ const products = [
     rating: 5,
     reviewCount: 14,
     imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/category-page-05-image-card-03.jpg',
+      'https://tailwindui.com/img/ecommerce-images/category-page-05-image-card-01.jpg',
     imageAlt: 'TODO',
     href: '#',
   },
@@ -41,7 +41,7 @@ const products = [
     rating: 4,
     reviewCount: 21,
     imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/category-page-05-image-card-04.jpg',
+      'https://tailwindui.com/img/ecommerce-images/category-page-05-image-card-01.jpg',
     imageAlt: 'TODO',
     href: '#',
   },
