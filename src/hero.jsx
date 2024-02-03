@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import srdce from './assets/srdce.png'
 
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
+  { name: 'O mně', href: '#' },
+  { name: 'Společné nakupování', href: '#' },
+  { name: 'Revize šatníku', href: '#' },
+  { name: 'Kontakt', href: '#' },
 ]
 
 export default function Hero() {
@@ -20,14 +21,10 @@ export default function Hero() {
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
-              />
-            </a>
+            {/* <a href="#" className="-m-1.5 p-1.5">
+              <span className="sr-only">Jak na styl</span>
+              <img className="h-8 w-auto" src={srdce} alt="" />
+            </a> */}
           </div>
           <div className="flex lg:hidden">
             <button
@@ -35,7 +32,7 @@ export default function Hero() {
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
               onClick={() => setMobileMenuOpen(true)}
             >
-              <span className="sr-only">Open main menu</span>
+              <span className="sr-only">Otevři menu</span>
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
@@ -50,14 +47,7 @@ export default function Hero() {
               </a>
             ))}
           </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a
-              href="#"
-              className="text-sm font-semibold leading-6 text-gray-900"
-            >
-              Log in <span aria-hidden="true">&rarr;</span>
-            </a>
-          </div>
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end"></div>
         </nav>
         <Dialog
           as="div"
@@ -69,19 +59,15 @@ export default function Hero() {
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
-                <img
-                  className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                  alt=""
-                />
+                <span className="sr-only">Jak na styl</span>
+                <img className="h-8 w-auto" src={srdce} alt="" />
               </a>
               <button
                 type="button"
                 className="-m-2.5 rounded-md p-2.5 text-gray-700"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                <span className="sr-only">Close menu</span>
+                <span className="sr-only">Zavři menu</span>
                 <XMarkIcon className="h-6 w-6" aria-hidden="true" />
               </button>
             </div>
@@ -98,14 +84,14 @@ export default function Hero() {
                     </a>
                   ))}
                 </div>
-                <div className="py-6">
+                {/* <div className="py-6">
                   <a
                     href="#"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Log in
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </Dialog.Panel>
@@ -156,31 +142,38 @@ export default function Hero() {
           </div>
           <div className="overflow-hidden">
             <div className="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
-              <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
-                <div className="relative w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-                  <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                    We’re changing the way people connect.
-                  </h1>
-                  <p className="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
-                    Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in
-                    quis cupidatat mollit aute velit. Et labore commodo nulla
-                    aliqua proident mollit ullamco exercitation tempor. Sint
-                    aliqua anim nulla sunt mollit id pariatur in voluptate
-                    cillum.
-                  </p>
-                  <div className="mt-10 flex items-center gap-x-6">
-                    <a
-                      href="#"
-                      className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                    >
-                      Get started
-                    </a>
-                    <a
-                      href="#"
-                      className="text-sm font-semibold leading-6 text-gray-900"
-                    >
-                      Live demo <span aria-hidden="true">→</span>
-                    </a>
+              <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center lg:jus">
+                <div className="flex flex-col items-center">
+                  <img className="h-48 w-fit mb-10" src={srdce} alt="logo" />
+                  <div className="relative w-full max-w-xl lg:shrink-0 xl:max-w-2xl lg:text-center sm:text-start">
+                    <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                      Jak na styl
+                    </h1>
+                    <p className="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
+                      Móda hraje klíčovou roli ve společnosti, nejen jako
+                      prostředek sebevyjádření, ale také jako kulturní fenomén
+                      odrážející ducha doby. Skrze módu můžeme komunikovat naši
+                      individualitu, příslušnost k určité skupině či názory na
+                      svět. Móda nám poskytuje možnost transformovat se a
+                      vyjadřovat svou kreativitu skrz oblečení a doplňky. <br/> {' '}
+                      <span className="font-bold">
+                        Jestli nevíš jak na to, ráda ti pomůžu.
+                      </span>
+                    </p>
+                    <div className="mt-10 flex lg:justify-center sm:justify-start items-center gap-x-6">
+                      <a
+                        href="#"
+                        className="rounded-md bg-black px-3.5 py-2.5 text-md font-semibold text-white shadow-sm hover:bg-[#cf0029] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                      >
+                        Kontaktuj mě
+                      </a>
+                      <a
+                        href="#"
+                        className="text-md font-semibold leading-6 text-gray-900 hover:underline"
+                      >
+                        Inspiruj se <span aria-hidden="true">→</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
                 <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
