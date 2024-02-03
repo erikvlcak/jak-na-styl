@@ -17,17 +17,17 @@ const texty = {
   satnik: {
     nadpis: 'Revize šatníku',
     popis:
-      'Stanu se vášim osobním módním poradcem připraveným vám pomoci objevit skvosty ve vašem šatníku a vytvořit stylové kombinace, které budou odrážet váš jedinečný osobní styl. S detailním pohledem na váš šatník vám poskytnu odborné rady ohledně barev, střihů a doplňků, abyste se cítili sebevědomí a šik v každé příležitosti. Připravte se na módní transformaci, kde každý kousek ve vašem šatníku bude mít své nezbytné místo a bude plně v souladu s vaším individuálním vkusem.',
+      'Stanu se vášim osobním módním poradcem. Pomůžu vám objevit skvosty ve vašem šatníku a vytvořit stylové kombinace, které budou odrážet vaši jedinečnou osobnost. S detailním pohledem na váš šatník vám poskytnu odborné rady ohledně barev, střihů a doplňků, abyste se cítili sebevědomí a šik v každé příležitosti. Připravte se na módní transformaci, kde každý kousek ve vašem šatníku bude mít své nezbytné místo a bude plně v souladu s vaším individuálním vkusem.',
     body: [
       {
         ikona: MagnifyingGlassIcon,
         heslo:
-          'Postupně si projdeme celý váš šatník a spolu rozhodneme o tom co ponechat, pozměnit nebo doplnit. ',
+          'Postupně si projdeme celý váš šatník a spolu rozhodneme o tom, co ponechat, pozměnit nebo doplnit. ',
       },
       {
         ikona: ScissorsIcon,
         heslo:
-          'Pomůžu s úpravou střihu, velikosti nebo opravou oblečení, které stojí za to zachránit.',
+          'Pomůžu vám s úpravou střihu nebo velikosti a profesionální opravou oblečení, které stojí za to zachránit.',
       },
       {
         ikona: CakeIcon,
@@ -39,7 +39,7 @@ const texty = {
   nakupovani: {
     nadpis: 'Společné nakupování',
     popis:
-      'Provedu vás fascinujícím světem trendů a stylů při společných nákupních dobrodružstvích. Naše setkání nebude jen obyčejný nákup, ale skvělá příležitost k tomu, abychom společně objevili nové inspirace, zdokonalili váš osobní styl a doplnili váš šatník o skvostné kousky. Sprostředkuju vám zábavný, časově efektivní a cenově dostupný nákup. Při nakupováni v Second Hand obchodech se přesvědčíme, že za kvalitní oblečení nemusíte utratit celou výplatu.',
+      'Provedu vás fascinujícím světem trendů a stylů při společných nákupních dobrodružstvích. Naše setkání nebude jen obyčejný nákup, ale skvělá příležitost k tomu, abychom společně objevili nové inspirace, zdokonalili váš osobní styl a doplnili váš šatník o skvostné kousky. Sprostředkuju vám zábavný, časově efektivní a cenově dostupný nákup. Při nakupováni v Second handech se přesvědčíme, že za kvalitní oblečení nemusíte utratit půl výplaty.',
     body: [
       {
         ikona: BanknotesIcon,
