@@ -133,7 +133,7 @@ export default function Hero() {
             aria-hidden="true"
           >
             <div
-              className="aspect-[801/1036] w-[50.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
+              className="aspect-[801/1036] w-[50.0625rem] bg-gradient-to-tr from-[#cf3b00] to-[#cf0029] opacity-40"
               style={{
                 clipPath:
                   'polygon(63.1% 29.5%, 100% 17.1%, 76.6% 3%, 48.4% 0%, 44.6% 4.7%, 54.5% 25.3%, 59.8% 49%, 55.2% 57.8%, 44.4% 57.2%, 27.8% 47.9%, 35.1% 81.5%, 0% 97.7%, 39.2% 100%, 35.2% 81.4%, 97.2% 52.8%, 63.1% 29.5%)',
@@ -146,7 +146,7 @@ export default function Hero() {
                 <div className="flex flex-col items-center">
                   <img className="h-48 w-fit mb-10" src={srdce} alt="logo" />
                   <div className="relative w-full max-w-xl lg:shrink-0 xl:max-w-2xl lg:text-center sm:text-start">
-                    <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                    <h1 className="lg:text-8xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                       Jak na styl
                     </h1>
                     <p className="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
@@ -155,15 +155,15 @@ export default function Hero() {
                       odrážející ducha doby. Skrze módu můžeme komunikovat naši
                       individualitu, příslušnost k určité skupině či názory na
                       svět. Móda nám poskytuje možnost transformovat se a
-                      vyjadřovat svou kreativitu skrz oblečení a doplňky. <br/> {' '}
+                      vyjadřovat svou kreativitu skrz oblečení a doplňky. <br />{' '}
                       <span className="font-bold">
-                        Jestli nevíš jak na to, ráda ti pomůžu.
+                        Jestli nevíte jak na to, ráda vám pomůžu.
                       </span>
                     </p>
                     <div className="mt-10 flex lg:justify-center sm:justify-start items-center gap-x-6">
                       <a
                         href="#"
-                        className="rounded-md bg-black px-3.5 py-2.5 text-md font-semibold text-white shadow-sm hover:bg-[#cf0029] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                        className="transition-all rounded-md bg-[#cf0029] px-3.5 py-2.5 text-md font-semibold text-white shadow-sm hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                       >
                         Kontaktuj mě
                       </a>

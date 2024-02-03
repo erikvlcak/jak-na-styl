@@ -97,9 +97,9 @@ export default function Mosaic() {
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-7xl overflow-hidden sm:px-6 lg:px-8">
-        <h2 className="sr-only">Products</h2>
-        <h2 className="text-4xl font-bold tracking-tight mb-4 text-gray-900">
-          Moje inspirace
+        <h2 className="sr-only">Módní návrhy</h2>
+        <h2 className="text-4xl font-bold tracking-tight mb-8 text-center text-gray-900">
+          Moje módní návrhy
         </h2>
         <div className="-mx-px grid grid-cols-2 border-l border-t border-gray-200 sm:mx-0 md:grid-cols-3 lg:grid-cols-4">
           {products.map((product) => (

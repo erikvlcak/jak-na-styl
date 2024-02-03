@@ -7,18 +7,19 @@ import Footer from "./footer";
 import Profiles from './profiles';
 import Quote from './quote';
 
+
 export default function App() {
     return (
-        <>
-            <Hero/>
-            <About/>
-            <Mosaic/>
-            <Profiles/>
-            <Card/>
-            <Quote/>
-            <Card/>
-            <Contact/>
-            <Footer/>
-        </>
-    );
+      <>
+        <Hero />
+        <About />
+        <Mosaic />
+        <Profiles />
+        <Card cardName={'satnik'} />
+        <Quote />
+        <Card cardName={'nakup'} />
+        <Contact />
+        <Footer />
+      </>
+    )
 }

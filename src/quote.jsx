@@ -1,13 +1,15 @@
+import chanel from './assets/chanel.jpg'
+
 export default function Quote() {
   return (
     <div className="bg-white pb-16 pt-24 sm:pb-24 sm:pt-32 xl:pb-32">
-      <div className="bg-gray-900 pb-20 sm:pb-24 xl:pb-0">
+      <div className="bg-[#de0025] pb-20 sm:pb-24 xl:pb-0">
         <div className="mx-auto flex max-w-7xl flex-col items-center gap-x-8 gap-y-10 px-6 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch">
           <div className="-mt-8 w-full max-w-2xl xl:-mb-8 xl:w-96 xl:flex-none">
             <div className="relative aspect-[2/1] h-full md:-mx-8 xl:mx-0 xl:aspect-auto">
               <img
                 className="absolute inset-0 h-full w-full rounded-2xl bg-gray-800 object-cover shadow-2xl"
-                src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
+                src={chanel}
                 alt=""
               />
             </div>
@@ -28,15 +30,16 @@ export default function Quote() {
               </svg>
               <blockquote className="text-xl font-semibold leading-8 text-white sm:text-2xl sm:leading-9">
                 <p>
-                  Gravida quam mi erat tortor neque molestie. Auctor aliquet at
-                  porttitor a enim nunc suscipit tincidunt nunc. Et non lorem
-                  tortor posuere. Nunc eu scelerisque interdum eget tellus non
-                  nibh scelerisque bibendum.
+                  Móda není pouze o oblečení. Móda je na obloze, na ulici, móda
+                  souvisí s našimi nápady, s tím, jak žijeme a s tím, co se děje
+                  kolem nás.
                 </p>
               </blockquote>
               <figcaption className="mt-8 text-base">
-                <div className="font-semibold text-white">Judith Black</div>
-                <div className="mt-1 text-gray-400">CEO of Workcation</div>
+                <div className="font-semibold text-white">Coco Chanel</div>
+                <div className="mt-1 text-gray-400">
+                  Světoznámá módní návrhářka
+                </div>
               </figcaption>
             </figure>
           </div>
