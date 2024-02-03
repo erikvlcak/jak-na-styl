@@ -30,7 +30,7 @@ const features = [
 
 
 
-export default function Card(prop) {
+export default function Card({cardName}) {
 
   return (
     <div className="overflow-hidden bg-white py-24 sm:py-32">
@@ -40,10 +40,10 @@ export default function Card(prop) {
             <div className="lg:max-w-lg">
               
               <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-               {prop.name === 'satnik' ? texty.satnik.nadpis : texty.nakupovani.nadpis }
+               {cardName === 'satnik' ? texty.satnik.nadpis : texty.nakupovani.nadpis }
               </p>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                {prop.name === 'satnik' ? texty.satnik.popis : texty.nakupovani.popis}
+                {cardName === 'satnik' ? texty.satnik.popis : texty.nakupovani.popis}
               </p>
               <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
                 {features.map((feature) => (
