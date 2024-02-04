@@ -9,9 +9,16 @@ import Quote from './quote';
 
 
 export default function App() {
+
+    function handleScroll(id) {
+    const targetSection = document.getElementById(id);
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    }}
+
     return (
       <>
-        <Hero />
+        <Hero scrollTo={handleScroll} />
         <About />
         <Mosaic />
         <Profiles />
@@ -19,7 +26,7 @@ export default function App() {
         <Quote />
         <Card />
         <Contact />
-        <Footer />
+        <Footer scrollTo={handleScroll} />
       </>
     )
 }

@@ -39,13 +39,16 @@ export default function Example() {
                 />
               </svg>
             </div>
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900">
+            <h2
+              className="text-3xl font-bold tracking-tight text-gray-900 relative isolate"
+              id="kontakt"
+            >
               Ozvěte se mi a domluvme si schůzku
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Můžete k tomu využít níže uvedené kontakty nebo vyplnit formulář a
-              já se Vám ozvu co nejdříve. Setkání je možné v okolí Prahy nebo Jindřichova
-              Hradce, případně podle domluvy.
+              já se Vám ozvu co nejdříve. Setkání je možné v okolí Prahy nebo
+              Jindřichova Hradce, případně podle domluvy.
             </p>
             <dl className="mt-10 space-y-4 text-base leading-7 text-gray-600">
               <div className="flex gap-x-4">

@@ -1,16 +1,17 @@
+/* eslint-disable react/prop-types */
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import srdce from './assets/srdce.png'
 
 const navigation = [
-  { name: 'O mně', href: '#' },
-  { name: 'Společné nakupování', href: '#' },
-  { name: 'Revize šatníku', href: '#' },
-  { name: 'Kontakt', href: '#' },
+  { name: 'O mně', href: '#omne'},
+  { name: 'Společné nakupování', href: '#nakupovani' },
+  { name: 'Revize šatníku', href: '#satnik'},
+  { name: 'Kontakt', href: '#kontakt' },
 ]
 
-export default function Hero() {
+export default function Hero({ scrollTo }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
@@ -20,8 +21,7 @@ export default function Hero() {
           className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
           aria-label="Global"
         >
-          <div className="flex lg:flex-1">
-          </div>
+          <div className="flex lg:flex-1"></div>
           <div className="flex lg:hidden">
             <button
               type="button"
@@ -37,7 +37,8 @@ export default function Hero() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-md font-semibold leading-6 text-gray-900"
+                className="scroll-smooth text-lg font-semibold leading-6 text-gray-900 hover:underline transition-all"
+                onClick={() => scrollTo(item.href)}
               >
                 {item.name}
               </a>
@@ -74,13 +75,13 @@ export default function Hero() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      className="-mx-3 scroll-smooth block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      onClick={() => scrollTo(item.href)}
                     >
                       {item.name}
                     </a>
                   ))}
                 </div>
-                
               </div>
             </div>
           </Dialog.Panel>
@@ -130,10 +131,10 @@ export default function Hero() {
             />
           </div>
           <div className="overflow-hidden">
-            <div className="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
+            <div className="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-42 lg:px-8 lg:pt-38">
               <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center lg:jus">
                 <div className="flex flex-col items-center">
-                  <img className="h-48 w-fit mb-10" src={srdce} alt="logo" />
+                  <img className=" h-52 mb-10" src={srdce} alt="logo" />
                   <div className="relative w-full max-w-xl lg:shrink-0 xl:max-w-2xl lg:text-center sm:text-start">
                     <h1 className="lg:text-8xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                       Jak na styl
@@ -151,6 +152,7 @@ export default function Hero() {
                     </p>
                     <div className="mt-10 flex lg:justify-center sm:justify-start items-center gap-x-6">
                       <a
+                        onClick={() => scrollTo('kontakt')}
                         href="#"
                         className="transition-all rounded-md bg-[#cf0029] px-3.5 py-2.5 text-md font-semibold text-white shadow-sm hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                       >
@@ -159,6 +161,7 @@ export default function Hero() {
                       <a
                         href="#"
                         className="text-md font-semibold leading-6 text-gray-900 hover:underline"
+                        onClick={() => scrollTo('inspirace')}
                       >
                         Inspirujte se <span aria-hidden="true">→</span>
                       </a>
@@ -166,8 +169,8 @@ export default function Hero() {
                   </div>
                 </div>
                 <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
-                  <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
-                    <div className="relative">
+                  <div className=" ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
+                    <div className="relative ">
                       <img
                         src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
                         alt=""

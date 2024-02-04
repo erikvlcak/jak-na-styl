@@ -98,7 +98,7 @@ export default function Mosaic() {
     <div className="bg-white">
       <div className="mx-auto max-w-7xl overflow-hidden sm:px-6 lg:px-8">
         <h2 className="sr-only">Módní návrhy</h2>
-        <h2 className="text-4xl font-bold tracking-tight mb-8 text-center text-gray-900">
+        <h2 className="text-4xl font-bold tracking-tight mb-8 text-center text-gray-900 relative isolate" id="inspirace">
           Moje módní návrhy
         </h2>
         <div className="-mx-px grid grid-cols-2 border-l border-t border-gray-200 sm:mx-0 md:grid-cols-3 lg:grid-cols-4">
@@ -107,7 +107,7 @@ export default function Mosaic() {
               key={product.id}
               className="group relative border-b border-r border-gray-200 p-4 sm:p-6"
             >
-              <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-200 group-hover:opacity-75">
+              <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-200 group-hover:translate-y-[-5px] transition-transform">
                 <img
                   src={product.imageSrc}
                   alt={product.imageAlt}

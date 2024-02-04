@@ -1,11 +1,13 @@
+/* eslint-disable react/prop-types */
+
+
+
 const navigation = {
   main: [
-    
-    { name: 'Revize šatníku', href: '#' },
-    { name: 'Společné nakupování', href: '#' },
-    { name: 'O mňe', href: '#' },
-    { name: 'Kontakt', href: '#' },
-    
+    { name: 'O mně', href: '#omne' },
+    { name: 'Společné nakupování', href: '#nakupovani' },
+    { name: 'Revize šatníku', href: '#satnik' },
+    { name: 'Kontakt', href: '#kontakt' },
   ],
   social: [
     {
@@ -37,7 +39,7 @@ const navigation = {
   ],
 }
 
-export default function Footer() {
+export default function Footer({scrollTo}) {
   return (
     <footer className="bg-white">
       <div className="border-t border-gray-900/10 lg:flex lg:items-center lg:justify-between">
@@ -50,7 +52,8 @@ export default function Footer() {
               <div key={item.name} className="pb-6">
                 <a
                   href={item.href}
-                  className="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                  className="text-sm scroll-smooth leading-6 text-gray-600 hover:text-gray-900"
+                  onClick={() => scrollTo(item.href)}
                 >
                   {item.name}
                 </a>
@@ -62,16 +65,20 @@ export default function Footer() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-gray-400 hover:text-gray-500"
+                className="text-gray-400 hover:text-gray-500 scroll-smooth"
               >
                 <span className="sr-only">{item.name}</span>
                 <item.icon className="h-6 w-6" aria-hidden="true" />
               </a>
             ))}
           </div>
-        <p className="mt-10 text-center text-xs leading-5 text-gray-500">
-            &copy; 2024 Lenka Dvořáková - Jak na styl. Web vytvořil <a href="https://github.com/erikvlcak" target="blank">Erik Vlčák</a>.
-        </p>
+          <p className="mt-10 text-center text-xs leading-5 text-gray-500">
+            &copy; 2024 Lenka Dvořáková - Jak na styl. Web vytvořil{' '}
+            <a href="https://github.com/erikvlcak" target="blank">
+              Erik Vlčák
+            </a>
+            .
+          </p>
         </div>
       </div>
     </footer>

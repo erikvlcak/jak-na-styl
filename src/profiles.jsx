@@ -8,16 +8,16 @@ export default function Profiles() {
         <h2 className="text-center text-lg font-semibold leading-8 text-gray-900">
           Mnoho dalších nápadů najdete v mém profilu na těchto platformách:
         </h2>
-        <div className="mx-auto mt-10 flex lg:flex-row sm:flex-col items-center max-w-lg lg:justify-center gap-x-20 gap-y-10 sm:max-w-xl lg:mx-0 lg:max-w-none">
+        <div className="  ease-in-out mx-auto mt-10 flex lg:flex-row sm:flex-col items-center max-w-lg lg:justify-center gap-x-20 gap-y-10 sm:max-w-xl lg:mx-0 lg:max-w-none">
           <img
-            className=" max-h-12  object-contain"
+            className=" max-h-12  object-contain cursor-pointer hover:translate-y-[-5px] hover:ease-in-out transition-transform"
             src={facebook}
             alt="Facebook"
             width={158}
             height={48}
           />
           <img
-            className="  max-h-22  object-contain"
+            className="  max-h-22  object-contain cursor-pointer hover:translate-y-[-5px] hover:ease-in-out transition-transform"
             src={instagram}
             alt="Instagram"
             width={158}
